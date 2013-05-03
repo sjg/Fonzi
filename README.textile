@@ -1,0 +1,27 @@
+h1. Fonsi
+h1. Facebook Online Navigation System for pervasive Interaction 
+
+Fonsi allows users to navigate and like facebook posts through gesture interactions.
+
+h2. Installation
+
+Fonsi has been tested on Windows 7 and Windows 8 (due to the Intel SDK being available for only Windows at the moment) with Processing version 2.08b.
+
+Clone into Processing folder and copy libraries into Processing Libraries folder. The Intel SDK should also be installed on the system.
+
+Install a webserver onto the machine, XAMPP is my prefered LAMP setup for Windows, and copy the web_client folder into the htdocs root.  This is needed as the Facebook Javascript API needs to pass a domain back to Facbook to validate the current Application ID.  The Application ID has been approved to run from the http://localhost domain, so visit http://localhost/web_client/ to run.
+
+Start the Processing Skecth to run the Websocket Server then visit http://localhost/web_client/.  You should see the image from the camera (Press "esc" or "s" to toggle camera images) on the browser. 
+
+h2.  To Use
+
+Swipe left or right to navigate posts.  Thumbs up to like a post.  Ayyyyyyyyyyyye!
+
+h2. Credits
+
+Web Background image ("grey_wash_wall") is from www.subtlepatterns.com.
+The mp3 recording was found somewhere on Google so thanks to the person who uploaded/created.
+
+h2. Licence
+
+This code is released under the "GPL v3":http://www.opensource.org/licenses/GPL-3.0. To negotiate GPL-incompatible uses, feel free contact me.

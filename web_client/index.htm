@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    <title> Fonsi | Facebook Online Navigation System for pervasive Interaction</title>
+	
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic' rel='stylesheet' type='text/css'>        
+    <link rel="stylesheet" type="text/css" href="./css/scrollable.css" />
+    <link rel="stylesheet" type="text/css" href="./css/scrollable-buttons.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonsi.css" />
+
+    <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/jquery.tools.min.js"></script>
+	<script src="./js/fonsi.js"></script>
+    	
+</head>
+<body>
+	<div id="heading">
+        <fb:login-button autologoutlink="true" perms="user_likes, user_photos, friends_photos, read_stream" style="float: right;"></fb:login-button>
+		<div id="title"> Fonsi </div>
+		<div id="subtitle">Facebook Online Navigation System for pervasive Interaction</div>
+	</div>
+
+	<div id="content"> 
+		
+        <div id="status">
+            <img src="img/spinner.gif" alt="like" id='spinner' style="width: 100px;"/>
+            <img src="img/like.png" alt="like" id='like' style="width: 100px; z-index: 99; display: none;"/>
+            <p></p>
+        </div>
+
+        <div id="cam1">
+             <img src="" alt="" id='rgbimage'/>
+        </div>
+
+        <div id="cam2">
+             <img src="" alt="" id='blobimage'/>
+        </div>
+	
+        <audio id="fonz">
+            <source src="res/fg-ay.mp3" type="audio/mpeg"/>
+                Your browser does not support HTML5 audio.
+        </audio>
+	</div>
+	
+    <div id="picContainer">
+        <a class="prev browse left"></a>
+        <div class="scrollable" id="scrollable">
+            <div class="items">
+                <div></div>
+            </div>
+        </div>
+        <a class="next browse right"></a>
+    </div>
+    
+    <div id="fb-root"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#scrollable").scrollable({circular: true});
+            setTimeout(function(){ checkFacebookLogin(); }, 500);
+            ready();
+        });
+    </script>
+</body>
+</html>

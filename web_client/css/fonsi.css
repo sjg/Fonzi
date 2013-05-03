@@ -1,0 +1,70 @@
+body{
+	background-image: url(../img/grey_wash_wall.png);
+	font-family: 'Roboto', sans-serif;
+}
+
+#heading{
+	width: 1024px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#title{
+	font-size: 77px;
+	font-weight: 100; 
+	margin-bottom: 30px;
+	color: white;
+}
+
+#subtitle{
+	font-size: 20px;
+	font-weight: 400; 
+	font-family: 'Roboto', sans-serif;
+	margin-left: 5px;
+	color: white;
+}
+
+#status p{
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+#content{
+    width: 1024px; 
+    margin: 0 auto;
+}
+
+#status{
+    position:absolute; 
+    margin-left: 450px; 
+    top:300px; 
+    width: 200px; 
+    z-index: 99; 
+    text-align: center;
+}
+
+#cam1{
+    position:absolute; 
+    width: 120px; 
+    height: 90px; 
+    float: right; 
+    top: 300px;
+}
+
+#cam2{
+    position:absolute; 
+    width: 120px; 
+    height: 90px; 
+    float: left; 
+    top: 300px; 
+    right: 100px;
+}
+
+#picContainer{
+    margin:0 auto; 
+    width: 634px; 
+    top: 50px;
+}
