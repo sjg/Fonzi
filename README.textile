@@ -1,5 +1,6 @@
 h1. Fonsi
-h1. Facebook Online Navigation System for pervasive Interaction 
+
+h2. Facebook Online Navigation System for pervasive Interaction 
 
 Fonsi allows users to navigate and like facebook posts through gesture interactions.
 
